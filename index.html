@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Node Js Technical Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+            *{
+                margin:0;
+                padding:0
+            }
+            main{
+                position: absolute;
+                margin-left: 310px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #navbar{
+                position: fixed;
+                top:0px;
+                left: 0px;
+                width: 300px;
+                height: 100px;
+             
+
+            }
+            header{
+                color:#80bd00;
+                margin:12px;
+                text-align: left;
+                font-size: 1.8em;
+                font-weight: 300;
+                font-family: 'Montserrat', sans-serif;
+            }
+            #main-doc header{
+                text-align: left;
+                margin:0px;
+            }
+            #navbar ul{
+                list-style: none;
+            }
+            nav li{
+                padding:25px;
+                font-size: 18px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                padding-left: 30px;
+            }
+            nav li a{
+                text-decoration: none;
+                color: #000;
+        
+            }
+            section li {
+                margin: 10px 0px 0px 20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 2;
+                
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                line-height: 2;
+                margin-left: 12px;
+                font-size: 14px;
+            }
+            .logo{
+                margin-left: 50px;
+            }
+            .download-link{
+                text-decoration: none;
+                color: #80bd00;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Side Menu-->
+        <nav id ="navbar">
+            <img src="images/logo.png" alt="logo" width="150px" class="logo">
+            <header>Documentation</header>
+            <ul>
+                <li class="nav-link"><a href ="#introduction">Introduction to Nodejs</a></li>
+                <li class="nav-link"><a href ="#install">How to install Node.js</a</li>
+                <li class="nav-link"><a href ="#run">Run Node.js scripts from the command line</a></li>
+                <li class="nav-link"><a href ="#use">How to use the Node.js REPL</a></li>
+                <li class="nav-link"><a href ="#exit">How to exit from a Node.js program</a></li>
+            </ul>
+        </nav>
+        <!--Main contetn-->
+        <main id="main-doc">
+
+    <!--Introduction to NodeJs section-->
+    <section class="main-section" id="introduction">
+      <header>Introduction to Nodejs</header>
+      <br>
+      <p>A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.</p>
+      <br>
+      <ul>
+          <li>Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.</li>
+          <li>Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!</li>
+          <li>A Node.js app is run in a single process, without creating a new thread for every request. </li>
+          <li>A Node.js app is run in a single process, without creating a new thread for every request. </li>
+          <li>An Example Node.js Application:</li>
+          
+      </ul>
+      <img src="images/nodejs.PNG" alt="example-of-nodejs" width="300">
+    </section>
+    <br>
+    <br>
+        <!--How to install Node.js-->
+        <section class="main-section" id="install">
+            <header>How to install Node.js</header>
+            <br>
+            <p>Installing Node.js® and NPM is pretty straightforward using the installer package available from the Node.js web site.</p>
+            <br>
+            <ul>
+                <li>Node.js can be installed in different ways. This post highlights the most common and convenient ones.</li>
+                <li>Official packages for all the major platforms are available at <a href ="https://nodejs.org/en/download/" class="download-link">https://nodejs.org/en/download</a>.</li>
+                <li>Other package managers for Linux and Windows are listed in <a href =" https://nodejs.org/en/download/package-manager/ " class="download-link">https://nodejs.org/en/download/package-manager </a></li>
+                <li><span class="nvm-color">nvm</span> is a popular way to run Node.js. It allows you to easily switch the Node.js version, and install new versions to try and easily rollback if something breaks, for example.</li>
+                <li>It is also very useful to test your code with old Node.js versions.</li>
+                
+            </ul>
+          </section>
+          <br>
+          <br>
+             <!--Run Node.js scripts from the command line-->
+        <section class="main-section" id="run">
+            <header>Run Node.js scripts from the command line</header>
+            <br>
+            <p>You can Run your JavaScript File from your Terminal only if you have installed NodeJs runtime. If you have Installed it then Simply open the terminal and type “node FileName.</p>
+            <br>
+            <ul>
+                <li>The usual way to run a Node.js program is to run the node globally available command (once you install Node.js) and pass the name of the file you want to execute.</li>
+                <li>If your main Node.js application file is app.js, you can call it by typing: <code>node app.js</code></span></li>
+                <li>While running the command, make sure you are in the same directory which contains the app.js file.</li>
+                <li>The file you have just created must be initiated by Node.js before any action can take place.</li>
+                <li>The file you have just created must be initiated by Node.js before any action can take place.</li>
+                
+            </ul>
+          </section>
+          <br>
+          <br>
+           <!--How to use the Node.js REPL-->
+        <section class="main-section" id ="use">
+            <br>
+            <header>How to use the Node.js REPL</header>
+            <br>
+            <p>Starting the REPL is simple - just run node on the command line without a filename. It then drops you into a simple prompt ('>') where you can type any JavaScript command you wish.</p>
+            <ul>
+                <li>The node command is the one we use to run our Node.js scripts: <code>node script.js</code></span></li>
+                <li>If we omit the filename, we use it in REPL mode: <code>node</code></span></li>
+                <li>If you try it now in your terminal, this is what happens: <code> node</code></span></li>
+                <li>The REPL is waiting for us to enter some JavaScript code, to be more precise.</li>
+                <li>The REPL will print all the properties and methods you can access on that class:</li>
+                
+            </ul>
+            <img src="images/rep.png" alt="node-rep" width="300">
+          </section >
+          <br>
+          <br>
+          <!--How to use the Node.js REPL-->
+        <section class="main-section" id ="exit">
+            <header>How to exit from a Node.js program</header>
+            <br>
+            <p>We can also exit a Node. js REPL by using the command ". exit". When you enter this in a running Node REPL, the current REPL will exit.</p>
+            <ul>
+                <li>When running a program in the console you can close it with ctrl-C, but what we want to discuss here is programmatically exiting.</span></li>
+                <li>The process core module provides a handy method that allows you to programmatically exit from a Node.js program: <span class ="nvm-color">process.exit()</span>By default the exit code is 0, which means success. Different exit codes have different meaning, which you might want to use in your own system to have the program communicate to other programs.</li>
+                <li>By default the exit code is 0, which means success. Different exit codes have different meaning, which you might want to use in your own system to have the program communicate to other programs.</li>
+                <li>This program is never going to end. If you call <span class ="nvm-color">process.exit()</span>, any currently pending or running request is going to be aborted. This is not nice</li>
+                <li>A program will gracefully exit when all the processing is done.</li>
+                
+            </ul>
+          </section>
+          <!--copyright-->
+          <br>
+          <br>
+          <section>
+           
+            <p style="text-align:center;">Done by Pretty Kunene</p>
+          
+          </section>
+
+        </main>
+    </body>
+</html>
